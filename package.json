@@ -3,7 +3,7 @@
   "description": "collection of branding assets to be shared between codepens and projects",
   "author": "joshuawootonn",
   "keywords": ["react", "personal-branding", "branding"],
-  "version": "1.0.1",
+  "version": "1.0.2",
   "private": false,
   "main": "dist/index.js",
   "module": "dist/index.js",

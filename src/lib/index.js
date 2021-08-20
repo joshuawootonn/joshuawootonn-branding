@@ -1,3 +1,3 @@
-import Branding from './so'
+import {Branding} from './branding'
 
 export {Branding};
