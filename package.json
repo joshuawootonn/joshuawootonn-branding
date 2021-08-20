@@ -1,8 +1,18 @@
 {
   "name": "@joshuawootonn/branding",
+  "description": "collection of branding assets to be shared between codepens and projects",
+  "author": "joshuawootonn",
+  "keywords": ["react", "personal-branding", "branding"],
   "version": "1.0.0",
   "private": false,
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "files": [ "dist", "README.md" ],
   "dependencies": {
+    "@babel/cli": "^7.14.8",
+    "@babel/core": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "@babel/preset-react": "^7.14.5",
     "framer-motion": "^4.1.17",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -11,9 +21,10 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "prebuild": "del -f dist",
+    "build": "cross-env NODE_ENV=production babel src/lib --out-dir dist --copy-files",
+    "push": "npm publish --access public"
   },
   "eslintConfig": {
     "extends": [
@@ -32,5 +43,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "cross-env": "^7.0.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshuawootonn/joshuawootonn-branding.git"
   }
 }
