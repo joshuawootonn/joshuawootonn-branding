@@ -24,6 +24,7 @@
     "test": "react-scripts test",
     "prebuild": "node clearDist.js",
     "build": "cross-env NODE_ENV=production babel src/lib --out-dir dist --copy-files",
+    "prepush": "npm run build",
     "push": "npm publish --access public"
   },
   "eslintConfig": {
