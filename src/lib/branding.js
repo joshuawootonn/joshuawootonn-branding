@@ -17,6 +17,7 @@ const Root = styled.div`
 const A = styled(motion.a)`
   font-family: "Josefin Sans", sans-serif;
   font-size: 25px;
+  line-height: 1;
   background-color: rgb(68, 109, 246);
   color: #fff;
   border: none;
