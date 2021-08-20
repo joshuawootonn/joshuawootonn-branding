@@ -1,6 +1,5 @@
 import React, {useRef} from "react";
 import styled from "styled-components";
-import './global.css'
 import {motion} from "framer-motion";
 
 const Root = styled.div`
@@ -43,6 +42,9 @@ export const Branding = () => {
     )
     return (
         <Root>
+            <style>
+                @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+            </style>
             <A target="_blank" rel="noopener" href="https://www.joshuawootonn.com"
                whileHover={{
                    rotate: hoverRef.current,
@@ -50,7 +52,7 @@ export const Branding = () => {
                }}
                whileFocus={{
                    rotate: activeRef.current,
-                   scale: 1.05,
+                   scale: .95,
                }}>
                 more from me >
             </A>

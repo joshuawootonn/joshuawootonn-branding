@@ -1,5 +1,5 @@
 import './App.css';
-import {Branding} from "./lib/so";
+import {Branding} from "./lib";
 
 function App() {
   return (
